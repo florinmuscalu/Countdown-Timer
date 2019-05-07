@@ -1,0 +1,49 @@
+object Form2: TForm2
+  Left = 506
+  Top = 274
+  BorderStyle = bsToolWindow
+  Caption = 'Settings'
+  ClientHeight = 74
+  ClientWidth = 200
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsStayOnTop
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 5
+    Top = 32
+    Width = 31
+    Height = 13
+    Caption = 'Label1'
+  end
+  object TrackBar1: TTrackBar
+    Left = 0
+    Top = 0
+    Width = 200
+    Height = 25
+    Max = 100
+    Min = 1
+    Position = 10
+    TabOrder = 0
+    TickMarks = tmBoth
+    TickStyle = tsNone
+    OnChange = FormShow
+  end
+  object Button1: TButton
+    Left = 65
+    Top = 48
+    Width = 70
+    Height = 25
+    Caption = 'Save'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+end
